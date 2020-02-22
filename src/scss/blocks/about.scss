@@ -1,0 +1,42 @@
+.about {
+  padding-top: 27px;
+  margin-bottom: 25px;
+}
+
+.about__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
+.about__string {
+  margin: 0;
+
+  color: $white;
+  font: {
+    size: 12px;
+  }
+}
+
+.about__string-important {
+  font: {
+    weight: $text-semibold;
+  }
+}
+
+.about__string-link {
+  font: {
+    weight: $text-semibold;
+  }
+
+  &--email {
+    color: $white;
+  }
+
+  &--callback {
+    color: $text-secondary-color;
+    padding-bottom: 5px;
+
+    border-bottom: 2px dotted $text-secondary-color;
+  }
+}

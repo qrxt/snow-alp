@@ -1,0 +1,44 @@
+.promo {
+
+}
+
+.promo__inner {
+
+}
+
+.promo__title {
+  margin: 0 0 4px;
+
+  color: $text-title-color;
+  font: {
+    size: 64px;
+    weight: $text-extrabold;
+  };
+  line-height: 66px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.promo__description {
+  margin: 0 0 75px;
+
+  color: $text-primary-color;
+  font: {
+    size: 40px;
+    weight: $text-semibold;
+  }
+  line-height: 42px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.promo__description-overline {
+  vertical-align: super;
+  font: {
+    size: 22px
+  }
+}
+
+.promo__request {
+  //
+}

@@ -1,0 +1,27 @@
+// Цветовые
+
+$black: #000000;
+$white: #ffffff;
+
+// Шрифты
+
+$font-primary: "Montserrat", "Arial", sans-serif;
+$font-default-size: 12px;
+$font-default-color: $black;
+
+$font-secondary: "Impact", "Arial", sans-serif;
+
+// Text
+
+$text-primary-color: $white;
+$text-secondary-color: hsl(197, 63%, 58%);
+$text-title-color: hsl(52, 100%, 63%);
+
+$text-regular: 400;
+$text-semibold: 600;
+$text-extrabold: 800;
+
+// Transitions
+
+$transition-function: ease-out;
+$transition-delay: 0.25s;

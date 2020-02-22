@@ -1,0 +1,30 @@
+.main-nav__inner {
+  display: flex;
+}
+
+.main-nav__logo-section {
+  display: flex;
+  width: 23%;
+  margin-right: 43px;
+}
+
+.main-nav__site-list {
+  @include drop-list();
+}
+
+.main-nav__phone {
+  margin-left: auto;
+
+  color: $white;
+  font: {
+    size: 36px;
+    weight: $text-semibold;
+  }
+  line-height: 38px;
+}
+
+.main-nav__text {
+  &--cyan {
+    color: $text-secondary-color;
+  }
+}

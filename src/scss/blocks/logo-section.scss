@@ -1,0 +1,39 @@
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo-section__logo {
+  display: block;
+  margin-right: 15px;
+
+  color: $white;
+  text-transform: uppercase;
+  font: {
+    family: $font-secondary;
+    size: 39px;
+    weight: $text-extrabold;
+  }
+  text-shadow: 2px 2px 2px $black;
+  line-height: 42px;
+}
+
+.logo-section__text {
+  &--cyan {
+    color: $text-secondary-color;
+  }
+
+  &--white {
+    letter-spacing: -1px;
+  }
+}
+
+.logo-section__description {
+  margin: 0;
+
+  color: $white;
+  font: {
+    size: 12px;
+  }
+  line-height: 16px;
+}

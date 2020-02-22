@@ -1,0 +1,15 @@
+.site-list {
+  display: flex;
+  align-items: center;
+}
+
+.site-list__item:not(:last-child) {
+  margin-right: 84px;
+}
+
+.site-list__link {
+  color: $white;
+  font: {
+    weight: $text-semibold;
+  }
+}

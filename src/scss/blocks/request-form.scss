@@ -1,0 +1,66 @@
+.request-form {
+}
+
+.request-form__inputs-wrapper {
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.request-form__input-wrapper {
+  margin: 0;
+}
+
+.request-form__input-wrapper input {
+  width: 410px;
+  padding: 22px 32px;
+
+  border: none;
+  background-color: hsla(0, 0%, 100%, 0.4);
+  border-radius: 10px;
+
+  color: hsl(0, 0%, 100%);
+    font: {
+      family: $font-primary;
+      size: 18px;
+      weight: $text-semibold;
+    }
+
+  &::placeholder {
+    color: hsla(0, 0%, 100%, 0.4);
+    font: {
+      family: $font-primary;
+      size: 18px;
+      weight: $text-semibold;
+    }
+    line-height: 20px;
+  }
+}
+
+.request-form__input-wrapper:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+.request-form__center {
+  display: flex;
+  justify-content: center;
+
+  font: {
+    size: 12px;
+  };
+}
+
+.request-form__text {
+  &--cyan {
+    color: $text-secondary-color;
+  }
+}
+
+.request-form__checkbox input {
+  appearance: none;
+}
+
+.request-form__submit {
+  display: none; //!
+}
