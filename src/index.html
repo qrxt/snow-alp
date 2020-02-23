@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Document</title>
+  <title>Snow Alp</title>
 </head>
 <body>
   <header class="main-header">
@@ -98,16 +98,16 @@
               </p>
             </div>
 
-            <div class="request-form__center">
-              <label class="request-form__checkbox">
-                <input type="checkbox">
+            <div class="request-form__check">
+              <input type="checkbox" name="eula" id="eula-check" required>
+              <label class="request-form__checkbox" for="eula-check">
                 Я согласен с
-                <span class="request-form__text--cyan">политикой конфиденциальности</span>
+                <a class="request-form__text--link" href="#">политикой конфиденциальности</a>
                 и даю согласие на обработку персональных данных
               </label>
             </div>
 
-            <button class="request-form__submit" type="submit">
+            <button class="btn request-form__submit" type="submit">
               Отправить заявку
             </button>
           </form>

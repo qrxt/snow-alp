@@ -2,7 +2,7 @@
 }
 
 .request-form__inputs-wrapper {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 
   display: flex;
   justify-content: center;
@@ -42,9 +42,10 @@
   margin-right: 30px;
 }
 
-.request-form__center {
+.request-form__check {
   display: flex;
   justify-content: center;
+  margin-bottom: 47px;
 
   font: {
     size: 12px;
@@ -52,15 +53,83 @@
 }
 
 .request-form__text {
-  &--cyan {
+  &--link {
     color: $text-secondary-color;
+    text-decoration: underline;
+    text-decoration-color: $text-secondary-color;
   }
 }
 
-.request-form__checkbox input {
+.request-form__checkbox {
+  position: relative;
+  padding-left: 40px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: 6px;
+
+    cursor: pointer;
+  }
+
+  &::before {
+    width: 24px;
+    height: 24px;
+    left: 2px;
+    top: 0;
+    background-color: $white;
+  }
+
+  &::after {
+    width: 12px;
+    height: 12px;
+    left: 8px;
+    top: 6px;
+    background-color: $grey--dark;
+    border-radius: 3px;
+
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.request-form__check input[type="checkbox"] {
   appearance: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.request-form__check input[type="checkbox"] ~ .request-form__checkbox::before {
+  @include transition(box-shadow);
+}
+
+.request-form__checkbox:hover::before,
+.request-form__check input[type="checkbox"]:focus ~ .request-form__checkbox::before {
+  @include transition(box-shadow);
+
+  box-shadow: inset 0 0 0 1px $text-secondary-color;
+}
+
+.request-form__check input[type="checkbox"]:checked ~ .request-form__checkbox::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.request-form__check input[type="checkbox"]:checked:hover ~ .request-form__checkbox::after {
+  background-color: $grey;
+}
+
+.request-form__check input[type="checkbox"]:checked:focus ~ .request-form__checkbox::after {
+  @include transition(background-color);
+
+  background-color: $cyan;
 }
 
 .request-form__submit {
-  display: none; //!
+  width: 410px;
+  padding: 25px;
 }
