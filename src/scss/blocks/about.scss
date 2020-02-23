@@ -1,12 +1,11 @@
-.about {
-  padding-top: 27px;
-  margin-bottom: 25px;
-}
-
 .about__inner {
   display: flex;
   justify-content: space-between;
   padding-right: 10px;
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .about__string {

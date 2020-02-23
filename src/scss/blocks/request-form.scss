@@ -1,6 +1,3 @@
-.request-form {
-}
-
 .request-form__inputs-wrapper {
   margin-bottom: 23px;
 
@@ -35,6 +32,21 @@
       weight: $text-semibold;
     }
     line-height: 20px;
+
+    @include desktop {
+      font: {
+        size: 14px;
+      };
+    }
+  }
+
+  @include desktop {
+    width: 330px;
+    padding: 14px 30px;
+
+    font: {
+      size: 14px;
+    };
   }
 }
 
@@ -50,6 +62,14 @@
   font: {
     size: 12px;
   };
+
+  @include desktop {
+    margin-bottom: 27px;
+
+    font: {
+      size: 11px;
+    };
+  }
 }
 
 .request-form__text {
@@ -92,6 +112,24 @@
     opacity: 0;
     visibility: hidden;
   }
+
+  @include desktop {
+    padding-left: 34px;
+
+    &::before {
+      width: 20px;
+      height: 20px;
+
+      top: 3px;
+    }
+
+    &::after {
+      top: 8px;
+
+      width: 10px;
+      height: 10px;
+    }
+  }
 }
 
 .request-form__check input[type="checkbox"] {
@@ -132,4 +170,9 @@
 .request-form__submit {
   width: 410px;
   padding: 25px;
+
+  @include desktop {
+    width: 330px;
+    padding: 18px;
+  }
 }

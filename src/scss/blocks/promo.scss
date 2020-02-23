@@ -1,11 +1,3 @@
-.promo {
-
-}
-
-.promo__inner {
-
-}
-
 .promo__title {
   margin: 0 0 4px;
 
@@ -17,6 +9,16 @@
   line-height: 66px;
   text-transform: uppercase;
   text-align: center;
+
+  @include desktop {
+    margin: 0;
+    padding-right: 4px;
+
+    line-height: 42px;
+    font: {
+      size: 40px;
+    };
+  }
 }
 
 .promo__description {
@@ -30,6 +32,15 @@
   line-height: 42px;
   text-transform: uppercase;
   text-align: center;
+
+  @include desktop {
+    margin-bottom: 25px;
+
+    font: {
+      size: 21px;
+    };
+    line-height: 20px;
+  }
 }
 
 .promo__description-overline {
@@ -37,8 +48,18 @@
   font: {
     size: 22px
   }
+
+  @include desktop {
+    font: {
+      size: 12px;
+    };
+  }
 }
 
 .promo__request {
   margin-bottom: 105px;
+
+  @include desktop {
+    margin-bottom: 53px;
+  }
 }

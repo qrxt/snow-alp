@@ -10,4 +10,12 @@
   border: none;
   background-color: $cyan;
   border-radius: 10px;
+
+  cursor: pointer;
+
+  @include desktop {
+    font: {
+      size: 16px;
+    };
+  }
 }

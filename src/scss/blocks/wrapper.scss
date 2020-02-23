@@ -4,15 +4,8 @@
   max-width: 1330px;
   padding: 0 10px 0 28px;
 
-  // @media (max-width: 1179px) {
-  //   padding: 0 30px;
-  // }
-
-  // @include tablet {
-  //   padding: 0 20px;
-  // }
-
-  // @include mobile {
-  //   padding: 0 10px;
-  // }
+  @include desktop {
+    max-width: 710px;
+    padding: 0 10px;
+  }
 }

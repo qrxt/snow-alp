@@ -1,15 +1,44 @@
 .main-nav__inner {
   display: flex;
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.main-nav__menu-btn {
+  display: none;
+  width: 24px;
+  height: 15px;
+  margin-right: 35px;
+  padding: 0;
+  position: relative;
+
+  @include desktop {
+    display: block;
+  }
 }
 
 .main-nav__logo-section {
   display: flex;
   width: 23%;
   margin-right: 43px;
+
+  @include desktop {
+    width: 30%;
+  }
 }
 
 .main-nav__site-list {
   @include drop-list();
+
+  display: flex;
+  align-items: center;
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .main-nav__phone {
@@ -21,6 +50,13 @@
     weight: $text-semibold;
   }
   line-height: 38px;
+
+  @include desktop {
+    font: {
+      size: 30px;
+    };
+    line-height: 32px;
+  }
 }
 
 .main-nav__text {

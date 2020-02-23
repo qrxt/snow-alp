@@ -1,0 +1,36 @@
+.burger-btn {
+  border: none;
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+
+    background-color: $white;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+}
+
+.burger-btn__middle {
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 1px);
+
+  background-color: $white;
+}
