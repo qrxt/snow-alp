@@ -42,5 +42,8 @@
     "last 2 versions",
     "IE 11",
     "Firefox ESR"
-  ]
+  ],
+  "dependencies": {
+    "imask": "^6.0.3"
+  }
 }

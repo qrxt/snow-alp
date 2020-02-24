@@ -87,6 +87,19 @@
 
 .main-nav__text {
   &--cyan {
+    @include transition(color);
+
     color: $text-secondary-color;
   }
+}
+
+.main-nav__phone:focus {
+  outline: none;
+}
+
+.main-nav__phone:hover .main-nav__text--cyan,
+.main-nav__phone:focus .main-nav__text--cyan {
+  @include transition(color);
+
+  color: $yellow;
 }

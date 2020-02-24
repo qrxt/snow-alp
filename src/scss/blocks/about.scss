@@ -28,14 +28,23 @@
     weight: $text-semibold;
   }
 
-  &--email {
-    color: $white;
-  }
-
+  &--email,
   &--callback {
     color: $text-secondary-color;
     padding-bottom: 5px;
 
     border-bottom: 2px dotted $text-secondary-color;
+
+    transition:
+      color 0.25s ease-out,
+      border-bottom 0.25s ease-out;
+
+    &:hover,
+    &:focus {
+      outline: none;
+
+      color: $yellow;
+      border-bottom: 2px dotted $yellow;
+    }
   }
 }
