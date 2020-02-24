@@ -4,8 +4,11 @@
   max-width: 1330px;
   padding: 0 10px 0 28px;
 
-  @include desktop {
-    max-width: 710px;
-    padding: 0 10px;
+  @include tablet {
+    padding: 0 40px;
+  }
+
+  @include mobile {
+    padding: 0 15px;
   }
 }

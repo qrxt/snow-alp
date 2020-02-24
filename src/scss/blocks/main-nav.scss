@@ -1,9 +1,13 @@
 .main-nav__inner {
   display: flex;
 
-  @include desktop {
+  @include tablet {
     display: flex;
     align-items: center;
+  }
+
+  @include mobile {
+    flex-wrap: wrap;
   }
 }
 
@@ -15,8 +19,12 @@
   padding: 0;
   position: relative;
 
-  @include desktop {
+  @include tablet {
     display: block;
+  }
+
+  @include mobile {
+    order: 1;
   }
 }
 
@@ -25,8 +33,15 @@
   width: 23%;
   margin-right: 43px;
 
-  @include desktop {
+  @include tablet {
     width: 30%;
+  }
+
+  @include mobile {
+    justify-content: space-between;
+    width: 100%;
+    order: 0;
+    margin: 0 0 20px;
   }
 }
 
@@ -36,8 +51,12 @@
   display: flex;
   align-items: center;
 
-  @include desktop {
+  @include tablet {
     display: none;
+  }
+
+  @include mobile {
+    order: 2;
   }
 }
 
@@ -51,11 +70,18 @@
   }
   line-height: 38px;
 
-  @include desktop {
+  @include tablet {
     font: {
       size: 30px;
     };
     line-height: 32px;
+  }
+
+  @include mobile {
+    order: 1;
+    font: {
+      size: 24px;
+    };
   }
 }
 

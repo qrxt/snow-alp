@@ -69,6 +69,7 @@ gulp.task("server", () => {
     "src/img/*.{png,jpg}",
     gulp.series(
       "images",
+      "copy",
       "refresh"
     )
   );

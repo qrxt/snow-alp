@@ -1,3 +1,9 @@
+.promo__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .promo__title {
   margin: 0 0 4px;
 
@@ -10,13 +16,22 @@
   text-transform: uppercase;
   text-align: center;
 
-  @include desktop {
+  @include tablet {
     margin: 0;
     padding-right: 4px;
 
     line-height: 42px;
     font: {
       size: 40px;
+    };
+  }
+
+  @include mobile {
+    margin-bottom: 13px;
+
+    line-height: 36px;
+    font: {
+      size: 30px;
     };
   }
 }
@@ -33,13 +48,23 @@
   text-transform: uppercase;
   text-align: center;
 
-  @include desktop {
+  @include tablet {
     margin-bottom: 25px;
 
+    line-height: 20px;
     font: {
       size: 21px;
     };
-    line-height: 20px;
+  }
+
+  @include mobile {
+    width: 77%;
+    margin-bottom: 40px;
+
+    line-height: 21px;
+    font: {
+      size: 18px;
+    };
   }
 }
 
@@ -49,7 +74,7 @@
     size: 22px
   }
 
-  @include desktop {
+  @include tablet {
     font: {
       size: 12px;
     };
@@ -59,7 +84,8 @@
 .promo__request {
   margin-bottom: 105px;
 
-  @include desktop {
+  @include tablet {
     margin-bottom: 53px;
+    width: 100%;
   }
 }

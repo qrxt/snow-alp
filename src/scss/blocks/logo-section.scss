@@ -17,12 +17,21 @@
   text-shadow: 2px 2px 2px $black;
   line-height: 42px;
 
-  @include desktop {
+  @include tablet {
     margin-right: 25px;
 
     font: {
       size: 31px;
     };
+  }
+
+  @include mobile {
+    margin-right: 30px;
+
+    font: {
+      size: 32px
+    };
+    line-height: 31px;
   }
 }
 
@@ -44,4 +53,10 @@
     size: 12px;
   }
   line-height: 16px;
+
+  @include mobile {
+    font: {
+      size: 14px;
+    };
+  }
 }

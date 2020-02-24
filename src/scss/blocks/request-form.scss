@@ -3,14 +3,33 @@
 
   display: flex;
   justify-content: center;
+
+  @include tablet {
+    width: 100%;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    margin-bottom: 21px;
+  }
 }
 
 .request-form__input-wrapper {
+  width: 410px;
+
   margin: 0;
+
+  @include tablet {
+    width: 330px;
+  }
+
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .request-form__input-wrapper input {
-  width: 410px;
+  width: 100%;
   padding: 22px 32px;
 
   border: none;
@@ -33,25 +52,34 @@
     }
     line-height: 20px;
 
-    @include desktop {
+    @include tablet {
       font: {
         size: 14px;
       };
     }
   }
 
-  @include desktop {
-    width: 330px;
+  @include tablet {
     padding: 14px 30px;
 
     font: {
       size: 14px;
     };
   }
+
+  @include mobile {
+    width: 100%;
+    padding: 16px 23px;
+  }
 }
 
 .request-form__input-wrapper:not(:last-of-type) {
   margin-right: 30px;
+
+  @include mobile {
+    margin-right: 0;
+    margin-bottom: 18px;
+  }
 }
 
 .request-form__check {
@@ -63,7 +91,7 @@
     size: 12px;
   };
 
-  @include desktop {
+  @include tablet {
     margin-bottom: 27px;
 
     font: {
@@ -113,7 +141,7 @@
     visibility: hidden;
   }
 
-  @include desktop {
+  @include tablet {
     padding-left: 34px;
 
     &::before {
@@ -124,10 +152,32 @@
     }
 
     &::after {
+      left: 7px;
       top: 8px;
 
       width: 10px;
       height: 10px;
+    }
+  }
+
+  @include mobile {
+    padding-top: 6px;
+    padding-left: 33px;
+    padding-right: 10px;
+
+    line-height: 13px;
+    font: {
+      size: 10px;
+    };
+
+    &::before {
+      top: 2px;
+      left: 0;
+    }
+
+    &::after {
+      top: 7px;
+      left: 5px;
     }
   }
 }
@@ -171,8 +221,13 @@
   width: 410px;
   padding: 25px;
 
-  @include desktop {
+  @include tablet {
     width: 330px;
     padding: 18px;
+  }
+
+  @include mobile {
+    width: 100%;
+    margin-bottom: 35px;
   }
 }

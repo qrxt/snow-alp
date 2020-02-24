@@ -1,10 +1,14 @@
 .main-header {
+  background-size: cover;
   background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
 
-  @include desktop {
-    background-size: 130%;
-    background-position: -140px 60px;
+  @include tablet {
+    background-image: url("../img/header-bg-tablet.jpg");
+  }
+
+  @include mobile {
+    background-image: url("../img/header-bg-mobile.jpg");
   }
 }
 
@@ -12,7 +16,7 @@
   padding-top: 27px;
   margin-bottom: 25px;
 
-  @include desktop {
+  @include tablet {
     display: none;
   }
 }
@@ -20,8 +24,13 @@
 .main-header__nav {
   margin-bottom: 105px;
 
-  @include desktop {
+  @include tablet {
     margin-bottom: 36px;
     padding-top: 30px;
+  }
+
+  @include mobile {
+    padding-top: 28px;
+    margin-bottom: 45px;
   }
 }

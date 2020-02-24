@@ -3,7 +3,7 @@
   justify-content: space-between;
   padding-right: 10px;
 
-  @include desktop {
+  @include tablet {
     display: none;
   }
 }
