@@ -125,8 +125,8 @@ gulp.task("scss", () =>
 
 gulp.task("sprite", () =>
   gulp.src([
-    "source/img/icon-*.svg",
-    "source/img/logo-*.svg"
+    "src/img/icon-*.svg",
+    "src/img/logo-*.svg"
   ])
     .pipe(cheerio({
       run: $ => {

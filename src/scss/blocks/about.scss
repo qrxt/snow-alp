@@ -6,6 +6,10 @@
   @include tablet {
     display: none;
   }
+
+  @include mobile {
+    display: block;//
+  }
 }
 
 .about__string {
@@ -46,5 +50,29 @@
       color: $yellow;
       border-bottom: 2px dotted $yellow;
     }
+  }
+}
+
+.about__whatsapp-btn {
+  display: none;
+
+  @include mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-left: 12px;
+    padding: 8px;
+
+    border: none;
+    border-radius: 10px;
+    background-color: $grey--superdark;
+
+    color: $white;
+    font: {
+      size: 14px;
+      weight: $text-semibold;
+    };
+    text-align: center;
   }
 }

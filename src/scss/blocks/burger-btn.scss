@@ -13,6 +13,11 @@
     left: 0;
 
     background-color: $white;
+    opacity: 1;
+
+    transition:
+      transform 0.25s ease-out,
+      opacity 0.25s ease-out;
   }
 
   &::before {
@@ -21,6 +26,24 @@
 
   &::after {
     bottom: 0;
+  }
+
+  &:hover,
+  &:focus {
+    @include transition(opacity);
+
+    outline: none;
+    opacity: 0.8;
+  }
+
+  &--active::before {
+    background-color: $black;
+    transform: rotate(-45deg) translate(-4px, 5px);
+  }
+
+  &--active::after {
+    background-color: $black;
+    transform: rotate(45deg) translate(-4px, -5px);
   }
 }
 
@@ -33,4 +56,12 @@
   top: calc(50% - 1px);
 
   background-color: $white;
+
+  @include transition(opacity);
+}
+
+.burger-btn--active .burger-btn__middle {
+  @include transition(opacity);
+
+  opacity: 0;
 }

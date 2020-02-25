@@ -9,73 +9,83 @@
 </head>
 <body>
   <header class="main-header">
-    <div class="about main-header__about">
-      <div class="wrapper about__inner">
-        <p class="about__string">
-          Снег и лед могут появится неожидано,
-          <span class="about__string-important">
-            поэтому мы работаем 24/7
-          </span>
-        </p>
-        <p class="about__string">
-          Мы открыты для предложений и идей —
-          <a class="about__string-link about__string-link--email" href="mailto:hello@snow-alp.ru">
-            hello@snow-alp.ru
-          </a>
-        </p>
-        <p class="about__string">
-          Мы легко можем перезвонить сами —
-          <a class="about__string-link about__string-link--callback" href="#">
-            обратный звонок
-          </a>
-        </p>
-      </div>
-    </div>
-
-    <nav class="main-nav main-header__nav">
-      <div class="wrapper main-nav__inner">
-        <button class="burger-btn main-nav__menu-btn" type="button" aria-label="Открыть меню">
-          <span class="burger-btn__middle">
-          </span>
-        </button>
-        <div class="logo-section main-nav__logo-section">
-          <a class="logo-section__logo">
-            <span class="logo-section__text--cyan">Snow</span>&nbsp;<span class="logo-section__text--white">Alp</span>
-          </a>
-
-          <p class="logo-section__description">
-            Чистка снега&nbsp;и наледи&nbsp;с&nbsp;кровли
+    <div class="main-header__menu-wrapper">
+      <div class="about main-header__about">
+        <div class="wrapper about__inner">
+          <p class="about__string">
+            Снег и лед могут появится неожидано,
+            <span class="about__string-important">
+              поэтому мы работаем 24/7
+            </span>
           </p>
+          <p class="about__string">
+            Мы открыты для предложений и идей —
+            <a class="about__string-link about__string-link--email" href="mailto:hello@snow-alp.ru">
+              hello@snow-alp.ru
+            </a>
+          </p>
+          <p class="about__string">
+            Мы легко можем перезвонить сами —
+            <a class="about__string-link about__string-link--callback" href="#">
+              обратный звонок
+            </a>
+          </p>
+
+          <button class="whatsapp-btn about__whatsapp-btn">
+            Написать в
+            <svg class="whatsapp-btn__icon" width="25" height="25">
+              <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+            </svg>
+            WhatsApp
+          </button>
         </div>
-
-        <ul class="site-list main-nav__site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">
-              Цены
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">
-              Преимущества
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">
-              Отзывы
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">
-              Контакты
-            </a>
-          </li>
-        </ul>
-
-        <a class="main-nav__phone" href="tel:74953355353">
-          +7 495 <span class="main-nav__text--cyan">335 53 53</span>
-        </a>
       </div>
-    </nav>
+
+      <nav class="main-nav main-header__nav">
+        <div class="wrapper main-nav__inner">
+          <button class="burger-btn main-nav__menu-btn" type="button" aria-label="Открыть меню">
+            <span class="burger-btn__middle">
+            </span>
+          </button>
+          <div class="logo-section main-nav__logo-section">
+            <a class="logo-section__logo">
+              <span class="logo-section__text--cyan">Snow</span>&nbsp;<span class="logo-section__text--white">Alp</span>
+            </a>
+
+            <p class="logo-section__description">
+              Чистка снега&nbsp;и наледи&nbsp;с&nbsp;кровли
+            </p>
+          </div>
+
+          <ul class="site-list main-nav__site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                Цены
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                Преимущества
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                Отзывы
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+
+          <a class="main-nav__phone" href="tel:74953355353">
+            +7 495 <span class="main-nav__text--cyan">335 53 53</span>
+          </a>
+        </div>
+      </nav>
+    </div>
 
     <section class="promo main-nav__promo">
       <div class="wrapper promo__inner">

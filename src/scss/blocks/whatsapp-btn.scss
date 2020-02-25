@@ -1,0 +1,14 @@
+.whatsapp-btn {
+  @include transition(background-color);
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    background-color: lighten($color: $grey--superdark, $amount: 10%);
+  }
+}
+
+.whatsapp-btn__icon {
+  margin: 0 5px;
+}
