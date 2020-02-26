@@ -40,7 +40,10 @@ gulp.task("server", () => {
   );
 
   gulp.watch(
-    "src/js/*.js",
+    [
+      "src/js/*.js",
+      "src/js/global/*.js"
+    ],
     gulp.series(
       "js",
       "copy",
@@ -94,7 +97,10 @@ gulp.task("images", () =>
 );
 
 gulp.task("js", () =>
-  gulp.src("src/js/*.js")
+  gulp.src([
+    "src/js/global/*.js",
+    "src/js/*.js"
+  ])
     .pipe(sourcemaps.init())
     .pipe(
       babel()

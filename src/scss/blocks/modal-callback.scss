@@ -1,0 +1,17 @@
+.modal-callback {
+
+}
+
+.modal-callback__title {
+  text-align: center;
+  line-height: 32px;
+  font: {
+    family: $font-primary;
+    weight: $text-semibold;
+    size: 28px;
+  };
+}
+
+.modal-callback__description {
+  text-align: center;
+}

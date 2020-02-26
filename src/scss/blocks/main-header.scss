@@ -57,54 +57,56 @@
   }
 }
 
-.main-header__menu-wrapper--opened .main-header__nav {
-  margin-bottom: 0;
-}
+@include tablet {
+  .main-header__menu-wrapper--opened .main-header__nav {
+    margin-bottom: 0;
+  }
 
-.main-header__menu-wrapper--opened .main-nav__logo-section {
-  display: none;
-}
+  .main-header__menu-wrapper--opened .main-nav__logo-section {
+    display: none;
+  }
 
-.main-header__menu-wrapper--opened .main-nav__phone {
-  display: none;
-}
+  .main-header__menu-wrapper--opened .main-nav__phone {
+    display: none;
+  }
 
-.main-header__menu-wrapper--opened .main-nav__menu-btn {
-  position: absolute;
-  top: 20px;
-  right: -10px;
-}
+  .main-header__menu-wrapper--opened .main-nav__menu-btn {
+    position: absolute;
+    top: 20px;
+    right: -10px;
+  }
 
-.main-header__menu-wrapper--opened .main-nav__site-list {
-  display: block;
-  order: 2;
-  padding-left: 10px;
-  padding-top: 27px;
-}
+  .main-header__menu-wrapper--opened .main-nav__site-list {
+    display: block;
+    order: 2;
+    padding-left: 10px;
+    padding-top: 27px;
+  }
 
-.main-header__menu-wrapper--opened .main-header__about {
-  display: block;
-  order: 1;
-}
+  .main-header__menu-wrapper--opened .main-header__about {
+    display: block;
+    order: 1;
+  }
 
-.main-header__menu-wrapper--opened .site-list__item:not(:last-child) {
-  margin-bottom: 22px;
-}
+  .main-header__menu-wrapper--opened .site-list__item:not(:last-child) {
+    margin-bottom: 22px;
+  }
 
-.main-header__menu-wrapper--opened .site-list__link {
-  color: $black;
-}
+  .main-header__menu-wrapper--opened .site-list__link {
+    color: $black;
+  }
 
-.main-header__menu-wrapper--opened .about__string {
-  padding-left: 11px;
-  color: $black;
-  line-height: 14px;
-}
+  .main-header__menu-wrapper--opened .about__string {
+    padding-left: 11px;
+    color: $black;
+    line-height: 14px;
+  }
 
-.main-header__menu-wrapper--opened .about__string:not(:last-of-type) {
-  margin-bottom: 24px;
-}
+  .main-header__menu-wrapper--opened .about__string:not(:last-of-type) {
+    margin-bottom: 24px;
+  }
 
-.main-header__menu-wrapper--opened .about__string:last-of-type {
-  margin-bottom: 40px;
+  .main-header__menu-wrapper--opened .about__string:last-of-type {
+    margin-bottom: 40px;
+  }
 }

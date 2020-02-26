@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
   <link rel="stylesheet" href="css/style.min.css">
   <title>Snow Alp</title>
 </head>
@@ -31,13 +32,13 @@
             </a>
           </p>
 
-          <button class="whatsapp-btn about__whatsapp-btn">
+          <a class="whatsapp-btn about__whatsapp-btn" href="#">
             Написать в
             <svg class="whatsapp-btn__icon" width="25" height="25">
               <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
             </svg>
             WhatsApp
-          </button>
+          </a>
         </div>
       </div>
 
@@ -131,7 +132,22 @@
 
   </header>
 
-  <!-- popup -->
+  <div class="modal js-open-callback-modal modal--show"> <!-- remove show -->
+    <div class="modal__modal">
+      <div class="modal__content">
+        <a class="modal__close-btn" href="#" aria-label="Закрыть модальное окно"></a>
+        <div class="modal-callback modal__inner">
+          <h2 class="modal-callback__title">
+            Заявка на обратный звонок
+          </h2>
+
+          <p class="modal-callback__description">
+            Оставьте заявку и мы перезвоним вам в течение 15 минут
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://unpkg.com/imask"></script>
   <script src="index.min.js"></script>
