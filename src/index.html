@@ -102,7 +102,7 @@
             Оставьте заявку &mdash; в течение часа к вам выедет специалист
           </p>
 
-          <form action="#" class="request-form request__form">
+          <form action="#" class="form request-form request__form js-callback-form">
             <div class="request-form__inputs-wrapper">
               <p class="request-form__input-wrapper">
                 <input type="text" name="user-name" placeholder="Полное имя" required>
@@ -114,15 +114,15 @@
             </div>
 
             <div class="request-form__check">
-              <input type="checkbox" name="eula" id="eula-check" required>
-              <label class="request-form__checkbox" for="eula-check">
+              <input type="checkbox" name="eula" id="main-form-eula-check" required>
+              <label class="request-form__checkbox" for="main-form-eula-check">
                 Я согласен с
                 <a class="request-form__text--link" href="#">политикой конфиденциальности</a>
                 и даю согласие на обработку персональных данных
               </label>
             </div>
 
-            <button class="btn request-form__submit" type="submit">
+            <button class="btn request-form__submit js-callback-form-submit" type="submit">
               Отправить заявку
             </button>
           </form>
@@ -144,6 +144,54 @@
           <p class="modal-callback__description">
             Оставьте заявку и мы перезвоним вам в течение 15 минут
           </p>
+
+          <form action="#" class="form callback-form modal-callback__form js-callback-form">
+            <div class="callback-form__inputs-wrapper">
+              <p class="callback-form__input-wrapper">
+                <input type="text" name="user-name" placeholder="Полное имя" required>
+              </p>
+
+              <p class="callback-form__input-wrapper js-phone-input-wrapper">
+                <input type="tel" name="user-phone" placeholder="+7 ( ___ ) ___ - __ - __" required>
+              </p>
+            </div>
+
+            <div class="callback-form__check">
+              <input type="checkbox" name="eula" id="callback-form-eula-check" required>
+              <label class="callback-form__checkbox" for="callback-form-eula-check">
+                Я согласен с
+                <a class="callback-form__text--link" href="#">политикой конфиденциальности</a>
+                и даю согласие на обработку персональных данных
+              </label>
+            </div>
+
+            <button class="btn callback-form__submit js-callback-form-submit" type="submit">
+              Перезвоните мне
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="visually-hidden js-open-success-modal"></button>
+  <div class="modal js-callback-success-modal">
+    <div class="modal__modal">
+      <div class="modal__content">
+        <a class="modal__close-btn" href="#" aria-label="Закрыть модальное окно"></a>
+        <div class="modal-success modal__inner">
+          <h2 class="modal-success__title">
+            Заявка успешно отправлена!
+          </h2>
+
+          <p class="modal-success__description">
+            Спасибо за оставленную заявку, менеджер
+            свяжется с вами в течение 15 минут
+          </p>
+
+          <svg class="modal-success__tick" width="75" height="55">
+            <use xlink:href="img/sprite.svg#icon-tick"></use>
+          </svg>
         </div>
       </div>
     </div>

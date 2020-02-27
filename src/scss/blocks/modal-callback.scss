@@ -1,17 +1,33 @@
 .modal-callback {
+  padding-top: 50px;
+}
 
+.modal-callback__title {
+  margin: 0 0 20px;
+  padding: 0 100px;
+  text-align: center;
+
+  @include mobile {
+    padding: 0;
+  }
+}
+
+.modal-callback__description {
+  margin: 0 0 30px;
+  padding: 0 40px;
+  text-align: center;
+
+  font: {
+    size: 18px;
+  };
 }
 
 .modal-callback__title {
   text-align: center;
-  line-height: 32px;
+  line-height: 36px;
   font: {
     family: $font-primary;
     weight: $text-semibold;
-    size: 28px;
+    size: 30px;
   };
-}
-
-.modal-callback__description {
-  text-align: center;
 }

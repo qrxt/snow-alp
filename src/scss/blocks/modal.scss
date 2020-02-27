@@ -36,7 +36,7 @@
   vertical-align: middle;
   margin: 40px;
   min-width: 500px;
-  width: 31.2%;
+  width: 31.7%;
   z-index: 101;
 
   background-color: rgb(80,177,215);
@@ -45,10 +45,11 @@
     rgba(80,177,215,1) 0%,
     rgba(28,147,193,1) 100%
   );
+  border-radius: 15px;
 
   @include tablet {
     margin: 30px 0;
-    width: 80%;
+    width: 50%;
   }
 
   @include mobile {
@@ -65,19 +66,35 @@
 }
 
 .modal__close-btn {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   position: absolute;
-  top: -29px;
-  right: -4px;
+  top: 60px;
+  right: 40px;
 
   border: none;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-image: url("../img/sprite/close.svg");
   cursor: pointer;
 
   @include transition(opacity);
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+
+    background-color: $white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 
   &:hover,
   &:focus {
@@ -88,16 +105,24 @@
   &:active {
     opacity: 0.3;
   }
+
+  @include mobile {
+    top: 30px;
+  }
 }
 
 .modal__inner {
-  padding: 0 50px;
+  padding: 0 45px;
   -webkit-overflow-scrolling: touch;
 
   color: $white;
 
   @include tablet {
     padding: 0 30px;
+  }
+
+  @include mobile {
+    padding: 0 15px;
   }
 }
 

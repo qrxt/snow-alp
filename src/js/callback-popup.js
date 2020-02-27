@@ -3,8 +3,34 @@
 const openCallbackPopupBtnSelector = ".about__string-link--callback";
 const callbackPopupSelector = ".js-open-callback-modal";
 
-const modal = new window.Modal(openCallbackPopupBtnSelector, callbackPopupSelector);
+const openCallbackSuccessPopupSelector = ".js-open-success-modal";
+const callbackSuccessPopupSelector = ".js-callback-success-modal";
 
-window.modal = modal;
+const callbackForms = document
+  .querySelectorAll(".js-callback-form");
 
-modal.init();
+const callbackModal = new window.Modal(
+  openCallbackPopupBtnSelector,
+  callbackPopupSelector
+);
+
+callbackModal.init();
+
+const callbackSuccessModal = new window.Modal(
+  openCallbackSuccessPopupSelector,
+  callbackSuccessPopupSelector
+);
+
+callbackSuccessModal.init();
+
+if (callbackForms.length > 0) {
+  callbackForms.forEach(form => {
+    form.addEventListener("submit", evt => {
+      evt.preventDefault();
+
+      callbackModal.close();
+      console.log(callbackSuccessModal);
+      callbackSuccessModal.open();
+    });
+  });
+}
