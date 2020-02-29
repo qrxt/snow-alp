@@ -1,8 +1,8 @@
 .form--invalid input:invalid {
-  box-shadow: inset 0px 0px 0px 2px rgba(134,97,122,1);
+  box-shadow: inset 0 0 0 2px rgba(134, 97, 122, 1);
 }
 
 .form--invalid input:invalid:focus,
 .form--invalid input:invalid:hover {
-  box-shadow: inset 0px 0px 0px 2px rgba(134,97,122,1);
+  box-shadow: inset 0 0 0 2px rgba(134, 97, 122, 1);
 }

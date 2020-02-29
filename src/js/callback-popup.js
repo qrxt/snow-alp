@@ -1,7 +1,7 @@
 "use strict";
 
-const openCallbackPopupBtnSelector = ".about__string-link--callback";
-const callbackPopupSelector = ".js-open-callback-modal";
+const openCallbackPopupBtnSelector = ".js-open-callback-modal";
+const callbackPopupSelector = ".js-callback-modal";
 
 const openCallbackSuccessPopupSelector = ".js-open-success-modal";
 const callbackSuccessPopupSelector = ".js-callback-success-modal";
@@ -29,7 +29,7 @@ if (callbackForms.length > 0) {
       evt.preventDefault();
 
       callbackModal.close();
-      console.log(callbackSuccessModal);
+
       callbackSuccessModal.open();
     });
   });

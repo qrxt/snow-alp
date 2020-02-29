@@ -6,7 +6,7 @@ const serverCreator = require("browser-sync");
 const sourcemaps = require("gulp-sourcemaps");
 
 const babel = require("gulp-babel");
-// const terser = require("gulp-terser");
+const terser = require("gulp-terser");
 const concat = require("gulp-concat");
 
 const scss = require("gulp-sass");
@@ -105,7 +105,7 @@ gulp.task("js", () =>
     .pipe(
       babel()
     )
-    //.pipe(terser())
+    .pipe(terser())
     .pipe(concat("index.min.js"))
     .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("dist"))

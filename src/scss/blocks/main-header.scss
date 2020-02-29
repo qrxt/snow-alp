@@ -55,6 +55,18 @@
       z-index: 100;
     }
   }
+
+  &--nojs {
+    margin-bottom: 30px;
+  }
+}
+
+.main-header .main-header__menu-wrapper--opened.main-header__menu-wrapper--nojs {
+  @include tablet {
+    display: flex;
+    width: 100%;
+    position: static;
+  }
 }
 
 @include tablet {
